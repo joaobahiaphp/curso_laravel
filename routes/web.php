@@ -11,6 +11,46 @@
 |
 */
 
+Route::group(['prefix'=>'pessoas'],function(){
+    Route::get('/','PessoasController@index');
+    Route::get('/novo','PessoasController@novoView');
+    Route::post('/store','PessoasController@store');
+});
+
+/* 
+Route::get('/',function(){
+    return view('template.app');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['prefix'=>'pessoas'],function(){
+    Route::get('/','PessoasController@index');
+});
+
+Route::group(['prefix'=>'teste'],function(){
+    Route::get('/teste2',function(){
+        return view('teste');
+    });
+});
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
